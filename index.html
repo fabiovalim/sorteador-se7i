@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sorteador SE7I 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,600;0,800;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <div class="logo"><img src="logo.svg" alt="SE7I 2026"></div>
+  <p class="sub">VIII Semana de Tecnologia da Informação</p>
+
+  <section class="card stage" aria-live="polite">
+    <div class="num" id="num">?</div>
+    <p class="msg" id="msg"></p>
+  </section>
+
+  <section class="card">
+    <div class="controls">
+      <label class="f">De <input type="number" id="min" value="1" step="1"></label>
+      <label class="f">Até <input type="number" id="max" value="100" step="1"></label>
+    </div>
+    <label class="sw">
+      <input type="checkbox" id="rep">
+      <span class="track"></span>
+      <span>Sortear números repetidos</span>
+    </label>
+    <button class="btn" id="go">Sortear</button>
+
+    <div class="hist-h">
+      <h2>Últimos sorteados</h2>
+      <button class="clear" id="clear">Limpar</button>
+    </div>
+    <ul class="hist" id="hist"></ul>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
